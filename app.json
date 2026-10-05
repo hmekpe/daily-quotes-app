@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "Daily Quotes",
+    "slug": "quotes-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0B0D11",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.hope.dailyquotes"
+    },
+    "android": {
+      "package": "com.hope.dailyquotes",
+      "adaptiveIcon": {
+        "backgroundColor": "#0B0D11",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "@react-native-community/datetimepicker",
+      "expo-status-bar",
+      "expo-sharing",
+      [
+        "expo-notifications",
+        {
+          "color": "#22E4FF"
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#0B0D11"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "56679538-6b6c-4772-a3c4-a2767c0a9c19"
+      }
+    }
+  }
+}
